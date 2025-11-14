@@ -1,8 +1,9 @@
 import React from 'react'
+import { AboutOfferSection } from './components/AboutOfferSection'
 
 export const About = () => {
   return (
-    <div>About</div>
+    <AboutOfferSection/>
   )
 }
 

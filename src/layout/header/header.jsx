@@ -3,14 +3,15 @@ import { SearchIcon } from '../../assets/icons/searchIcon';
 import { CardIcon } from '../../assets/icons/card.icon';
 import LogoSvg from '../../assets/logo.svg';
 import { Navbar } from './navbar';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50 py-4">
       <div className="max-w-[1400px] mx-auto px-8 flex items-center justify-between gap-8">
-        <div className="flex items-center gap-3 cursor-pointer">
-          <img src={LogoSvg} alt="Logo" className="w-40 h-40 object-contain" />
-        </div>
+        <Link to="/" className="flex items-center gap-3 cursor-pointer">
+          <img src={LogoSvg} alt="Logo" className="w-24 h-24 object-contain" />
+        </Link>
 
         <Navbar />
 

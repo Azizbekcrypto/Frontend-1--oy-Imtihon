@@ -1,6 +1,6 @@
 import React from 'react';
-import { ProductShop } from '../../data/product';
-import { ShopProductCard } from './components/shop-productCard';
+import { ProductShop } from '../../data/shop-product';
+import { ShopProductCard } from '../../components/shop-productCard';
 
 export const Shop = () => {
   return (
@@ -22,6 +22,7 @@ export const Shop = () => {
       {ProductShop.map((item) => (
         <ShopProductCard
           key={item.id}
+          id={item.id}
           img={item.img}
           title={item.title}
           oldPrice={item.oldPrice}

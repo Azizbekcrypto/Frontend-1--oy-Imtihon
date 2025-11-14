@@ -10,6 +10,11 @@ import shop9 from '../assets/images-png/shop9.png';
 import shop10 from '../assets/images-png/shop10.png';
 import shop11 from '../assets/images-png/shop11.png';
 import shop12 from '../assets/images-png/shop12.png';
+import shop13 from '../assets/images-png/home1.png';
+import shop14 from '../assets/images-png/home2.png';
+import shop15 from '../assets/images-png/home3.png';
+import shop16 from '../assets/images-png/home4.png';
+
 
 export const ProductShop = [
   {
@@ -110,6 +115,42 @@ export const ProductShop = [
     img: shop12,
     title: 'Calabrese Broccoli',
     tag: 'Fresh',
+    oldPrice: 20,
+    newPrice: 17,
+  },
+  // Homeniki
+  {
+    id: 13,
+    img: shop13,
+    title: 'Mung Bean',
+    tag: 'Vegetable',
+    oldPrice: 20.0,
+    newPrice: 11,
+  },
+
+  {
+    id: 14,
+    img: shop14,
+    title: 'Brown Hazelnut',
+    tag: 'Vegetable',
+    oldPrice: 20,
+    newPrice: 12,
+  },
+
+  {
+    id: 15,
+    img: shop15,
+    title: 'Onion',
+    tag: 'Vegetable',
+    oldPrice: 20,
+    newPrice: 17,
+  },
+
+  {
+    id: 16,
+    img: shop16,
+    title: 'Cabbage',
+    tag: 'Vegetable',
     oldPrice: 20,
     newPrice: 17,
   },

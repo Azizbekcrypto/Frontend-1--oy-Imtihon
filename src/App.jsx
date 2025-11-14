@@ -7,6 +7,7 @@ import { Pages } from './pages/pages/pages';
 import { Projects } from './pages/projects/projects';
 import { Shop } from './pages/shop/shop';
 import { NotFound } from './pages/not-found/not-found';
+import { ShopSingle } from './pages/shop/shop-single';
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
           <Route path="pages" element={<Pages />} />
           <Route path="projects" element={<Projects />} />
           <Route path="news" element={<News />} />{' '}
-          <Route path="shop:id" element={<Shop />} />
+          <Route path="shop" element={<Shop />} />
+          <Route path="shop/:id" element={<ShopSingle />} />
+
 
           <Route path="*" element={<NotFound />} />
         </Route>
