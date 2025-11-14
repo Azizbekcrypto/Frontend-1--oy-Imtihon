@@ -1,0 +1,116 @@
+import shop1 from '../assets/images-png/shop1.png';
+import shop2 from '../assets/images-png/shop2.png';
+import shop3 from '../assets/images-png/shop3.png';
+import shop4 from '../assets/images-png/shop4.png';
+import shop5 from '../assets/images-png/shop5.png';
+import shop6 from '../assets/images-png/shop6.png';
+import shop7 from '../assets/images-png/shop7.png';
+import shop8 from '../assets/images-png/shop8.png';
+import shop9 from '../assets/images-png/shop9.png';
+import shop10 from '../assets/images-png/shop10.png';
+import shop11 from '../assets/images-png/shop11.png';
+import shop12 from '../assets/images-png/shop12.png';
+
+export const ProductShop = [
+  {
+    id: 1,
+    img: shop1,
+    title: 'Calabrese Broccoli',
+    tag: 'Vegetable',
+    oldPrice: 20.0,
+    newPrice: 13,
+  },
+
+  {
+    id: 2,
+    img: shop2,
+    title: 'Calabrese Broccoli',
+    tag: 'Fresh',
+    oldPrice: 20,
+    newPrice: 14,
+  },
+
+  {
+    id: 3,
+    img: shop3,
+    title: 'Calabrese Broccoli',
+    tag: 'Millets',
+    oldPrice: 20,
+    newPrice: 15,
+  },
+
+  {
+    id: 4,
+    img: shop4,
+    title: 'Calabrese Broccoli',
+    tag: 'Vegetable',
+    oldPrice: 20,
+    newPrice: 17,
+  },
+
+  {
+    id: 5,
+    img: shop5,
+    title: 'Calabrese Broccoli',
+    tag: 'Health',
+    oldPrice: 20,
+    newPrice: 11,
+  },
+
+  {
+    id: 6,
+    img: shop6,
+    title: 'Calabrese Broccoli',
+    tag: 'Nuts',
+    oldPrice: 20,
+    newPrice: 12,
+  },
+  {
+    id: 7,
+    img: shop7,
+    title: 'Calabrese Broccoli',
+    tag: 'Fresh',
+    oldPrice: 20,
+    newPrice: 17,
+  },
+  {
+    id: 8,
+    img: shop8,
+    title: 'Calabrese Broccoli',
+    tag: 'Fresh',
+    oldPrice: 20,
+    newPrice: 15,
+  },
+  {
+    id: 9,
+    img: shop9,
+    title: 'Calabrese Broccoli',
+    tag: 'Health',
+    oldPrice: 20,
+    newPrice: 11,
+  },
+  {
+    id: 10,
+    img: shop10,
+    title: 'Calabrese Broccoli',
+    tag: 'Nuts',
+    oldPrice: 20,
+    newPrice: 12,
+  },
+  {
+    id: 11,
+    img: shop11,
+    title: 'Calabrese Broccoli',
+    tag: 'Fresh',
+    oldPrice: 20,
+    newPrice: 15,
+  },
+  {
+    id: 12,
+    img: shop12,
+    title: 'Calabrese Broccoli',
+    tag: 'Fresh',
+    oldPrice: 20,
+    newPrice: 17,
+  },
+];
