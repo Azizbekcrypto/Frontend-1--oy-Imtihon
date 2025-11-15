@@ -1,9 +1,10 @@
-import React from 'react';
+import  { useEffect } from 'react';
 import { ProductShop } from '../../../data/shop-product';
 import { ShopProductCard } from '../../../components/shop-productCard';
 
 export const HomeOurProducts = () => {
   const limitedProducts = ProductShop.slice(0, 8); // 4 qilmoqchi bo‘lsang 4 yozasan
+ 
 
   return (
     <section className="max-w-[1300px] mx-auto px-6 py-16">

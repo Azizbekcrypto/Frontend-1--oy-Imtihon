@@ -1,0 +1,47 @@
+// src/components/team-card/TeamCard.jsx
+import React from 'react';
+// Iconlarni o'zingizning to'g'ri yo'llaridan import qiling
+import { FacebookIcon } from '../../../../assets/icons/fasebook.icon'; // Agar nomi 'Fasebook' bo'lsa
+import { InstagramIcon } from '../../../../assets/icons/instagram.icon';
+import { QushchaIcon } from '../../../../assets/icons/qushcha.icon'; 
+
+export const TeamCard = ({ expert }) => {
+  return (
+    <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+      
+      {/* Rasm qismi */}
+      <div className="relative h-[480px] overflow-hidden"> 
+        <img
+          src={expert.img}
+          alt={expert.name}
+          className="w-full h-full object-cover" 
+        />
+      </div>
+      
+      {/* Ma'lumot va Iconlar qismi */}
+      <div className="text-center pt-8 pb-10">
+        <h3 className="text-2xl font-bold text-[#274C5B] mb-1">
+          {expert.name}
+        </h3>
+        <p className="font-serif italic text-[#7EB693] mb-4">
+          {expert.role}
+        </p>
+
+        {/* Ijtimoiy tarmoq iconlari */}
+        <div className="flex justify-center space-x-3">
+          
+          <a href={expert.socials.facebook} target="_blank" rel="noopener noreferrer" className="p-1 hover:opacity-75 transition-opacity duration-200">
+            <FacebookIcon />
+          </a>
+          <a href={expert.socials.instagram} target="_blank" rel="noopener noreferrer" className="p-1 hover:opacity-75 transition-opacity duration-200">
+            <InstagramIcon />
+          </a>
+          <a href={expert.socials.twitter} target="_blank" rel="noopener noreferrer" className="p-1 hover:opacity-75 transition-opacity duration-200">
+            <QushchaIcon />
+          </a>
+
+        </div>
+      </div>
+    </div>
+  );
+};

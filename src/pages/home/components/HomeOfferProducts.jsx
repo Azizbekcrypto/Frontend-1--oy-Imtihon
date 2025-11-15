@@ -3,14 +3,14 @@ import React from 'react';
 import { ProductHome } from '../../../data/home-product';
 // Siz bergan mahsulot kartochkasi komponentini import qilish
 import { HomeProductCard } from '../../../components/home-productCard';
-// Eslatma: Agar ShopProductCard global komponentlar papkasida bo'lsa, yo'lni shunga moslang
 
 export const HomeOfferProducts = () => {
+
+
   return (
     // To'q yashil fon rangini beramiz
     <section className="bg-[#274C5B] w-full py-16 md:py-24">
       <div className="max-w-[1300px] mx-auto px-6">
-        
         {/* Sarlavha Qismi */}
         <div className="text-center md:text-left mb-12">
           <p className="font-serif italic text-[#7EB693] text-xl mb-2">Offer</p>
@@ -30,8 +30,6 @@ export const HomeOfferProducts = () => {
               oldPrice={item.oldPrice}
               newPrice={item.newPrice}
               tag={item.tag}
-              // Agar ShopProductCard ichida Link ishlatilmasa, uni shu yerda o'rab qo'yishingiz mumkin, 
-              // lekin siz uni comment qilib qo'ygansiz, shuning uchun Linksiz qoldiramiz.
             />
           ))}
         </div>
