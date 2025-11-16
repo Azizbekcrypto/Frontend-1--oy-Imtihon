@@ -1,4 +1,3 @@
-// src/sections/OurTeamSection/OurTeamSection.jsx
 import React from 'react';
 import { TeamExperts } from '../../../data/team-experts';
 import { TeamCard } from './Card/TeamCard';
@@ -8,7 +7,6 @@ export const OurTeamSection = () => {
     <section className="w-full py-16 md:py-32 bg-white">
       <div className="max-w-[1300px] mx-auto px-6">
         
-        {/* Sarlavha Bloki */}
         <div className="text-center max-w-3xl mx-auto mb-16">
         <h3
             className="text-[#7eb693] text-3xl md:text-4xl mb-3"
@@ -24,7 +22,6 @@ export const OurTeamSection = () => {
           </p>
         </div>
 
-        {/* Ekspertlar Kartochkalari Grid'i */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {TeamExperts.map((expert) => (
             <TeamCard key={expert.id} expert={expert} />

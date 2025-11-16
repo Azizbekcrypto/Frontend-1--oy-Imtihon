@@ -1,6 +1,5 @@
-// src/components/team-card/TeamCard.jsx
 import React from 'react';
-import { Facebook } from '../../../../assets/icons/fasebook.icon'; // Agar nomi 'Fasebook' bo'lsa
+import { Facebook } from '../../../../assets/icons/fasebook.icon'; 
 import { Insta } from '../../../../assets/icons/instagram.icon';
 import { Twitter } from '../../../../assets/icons/qushcha.icon'; 
 
@@ -8,7 +7,6 @@ export const TeamCard = ({ expert }) => {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       
-      {/* Rasm qismi */}
       <div className="relative h-[480px] overflow-hidden"> 
         <img
           src={expert.img}
@@ -17,7 +15,6 @@ export const TeamCard = ({ expert }) => {
         />
       </div>
       
-      {/* Ma'lumot va Iconlar qismi */}
       <div className="text-center pt-8 pb-10">
         <h3 className="text-2xl font-bold text-[#274C5B] mb-1">
           {expert.name}
@@ -26,7 +23,6 @@ export const TeamCard = ({ expert }) => {
           {expert.role}
         </p>
 
-        {/* Ijtimoiy tarmoq iconlari */}
         <div className="flex justify-center space-x-3">
           
           <a href={expert.socials.facebook} target="_blank" rel="noopener noreferrer" className="p-1 hover:opacity-75 transition-opacity duration-200">

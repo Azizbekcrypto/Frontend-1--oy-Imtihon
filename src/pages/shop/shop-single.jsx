@@ -4,7 +4,6 @@ import { ProductShop } from '../../data/shop-product';
 import { ShopSingleInfo } from './components/shop-single-info';
 import { RelatedProducts } from './components/related-products';
 import { ShopSingleHero } from './components/ShopSingleHero';
-// import { Button } from '../../components/button';
 import { TabButton } from '../../components/TabButton';
 export const ShopSingle = () => {
   const { id } = useParams();
@@ -24,9 +23,7 @@ export const ShopSingle = () => {
       <ShopSingleHero />
 
       <div className="max-w-[1200px] mx-auto mt-10 px-4 pb-20">
-        {/* Product Main Section */}
         <div className="flex flex-col md:flex-row gap-10 mb-16">
-          {/* Product Image with Sale Badge */}
           <div className="relative w-full md:w-[500px]">
             {product.tag && (
               <span className="absolute top-4 left-4 bg-[#274C5B] text-white px-4 py-2 rounded-lg text-sm font-semibold z-10">
@@ -43,9 +40,7 @@ export const ShopSingle = () => {
           <ShopSingleInfo product={product} />
         </div>
 
-        {/* Tabs Section */}
         <div className="mt-16">
-          {/* Tab Buttons */}
           <div className="flex justify-start gap-4 mb-8">
             <TabButton
               label="Product Description"
@@ -62,7 +57,6 @@ export const ShopSingle = () => {
             />
           </div>
 
-          {/* Tab Content */}
           <div className="bg-white rounded-2xl p-8">
             {activeTab === 'description' ? (
               <div className="text-gray-600 leading-relaxed space-y-4">
@@ -106,7 +100,6 @@ export const ShopSingle = () => {
           </div>
         </div>
 
-        {/* Related Products */}
         <div className="mt-20">
           <h2 className="text-4xl font-bold text-[#274C5B] mb-10 text-center">
             Related Products

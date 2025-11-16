@@ -25,17 +25,14 @@ export const ShopSingleInfo = ({ product }) => {
 
   return (
     <div className="flex-1 rounded-3xl bg-[#F9F8F8] p-10">
-      {/* Product Title */}
       <h1 className="text-4xl font-extrabold text-[#274C5B] font-['Roboto'] mb-3">
         {product.title}
       </h1>
 
-      {/* Rating */}
       <div className="mb-4">
         <StarRating rating={product.rating || 5} />
       </div>
 
-      {/* Price */}
       <div className="flex gap-4 items-center mb-6">
         <span className="line-through text-gray-400 text-xl font-semibold">
           ${product.oldPrice}
@@ -45,19 +42,16 @@ export const ShopSingleInfo = ({ product }) => {
         </span>
       </div>
 
-      {/* Description */}
       <p className="text-gray-600 leading-7 font-['Open_Sans'] text-base mb-8">
         Simply dummy text of the printing and typesetting industry. Lorem had
         ceased to been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley.
       </p>
 
-      {/* Quantity and Add to Cart */}
       <div className="flex items-center gap-4 mb-6">
         <div className="flex items-center gap-2">
           <label className="text-lg font-bold text-[#274C5B]">Quantity:</label>
 
-          {/* Quantity Control */}
           <div className="flex items-center border-2 border-[#274C5B] rounded-xl overflow-hidden">
             <button
               onClick={decreaseQuantity}
@@ -81,16 +75,13 @@ export const ShopSingleInfo = ({ product }) => {
           </div>
         </div>
 
-        {/* Add to Cart Button */}
         <button className="flex-1 h-[60px] bg-[#274C5B] hover:bg-[#7EB693] transition text-white text-xl font-bold rounded-xl">
           Add To Cart
         </button>
       </div>
 
-      {/* Divider */}
       <div className="border-t border-gray-300 my-6"></div>
 
-      {/* Additional Info */}
       <div className="space-y-3 text-base">
         <p className="text-gray-600">
           <span className="font-semibold text-[#274C5B]">Category:</span>{' '}

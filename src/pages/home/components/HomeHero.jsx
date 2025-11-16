@@ -6,7 +6,6 @@ import { Button } from '../../../components/button';
 export const HomeHero = () => {
   return (
     <section className="relative w-full h-[898px] overflow-hidden bg-[#f9f8f8]">
-      {/* Orqa fon rasmi (BigHero) - O'ng tomonda */}
       <div
         className="absolute inset-0 w-full h-full"
         style={{
@@ -17,7 +16,6 @@ export const HomeHero = () => {
         }}
       />
 
-      {/* Naqsh rasmi - Chap tomonda */}
       <div
         className="absolute inset-0 w-full h-full pointer-events-none"
         style={{
@@ -29,11 +27,9 @@ export const HomeHero = () => {
         }}
       />
 
-      {/* Kontent Bloki */}
       <div className="container relative h-full z-10">
         <div className="flex flex-col justify-center h-full max-w-[600px]">
           
-          {/* "100% Natural Food" - Yellowtail font */}
           <p 
             className="text-[#7eb693] text-4xl mb-2"
             style={{ fontFamily: 'var(--third-family)' }}
@@ -41,7 +37,6 @@ export const HomeHero = () => {
             100% Natural Food
           </p>
 
-          {/* Asosiy sarlavha - Roboto font */}
           <h1 
             className="text-7xl font-extrabold text-[#274c5b] mb-6 leading-[1.2]"
             style={{ fontFamily: 'var(--font-family)' }}
@@ -49,7 +44,6 @@ export const HomeHero = () => {
             Choose the best healthier way of life
           </h1>
 
-          {/* Explore Now tugmasi */}
           <div className="mt-4">
             <Button
               text="Explore Now"

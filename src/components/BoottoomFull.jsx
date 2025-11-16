@@ -21,7 +21,7 @@ export const BoottomFull = ({
     sm: 'px-6 py-3 text-sm h-[48px]',
     md: 'px-10 py-4 text-base h-[60px]',
     lg: 'px-12 py-5 text-lg h-[70px]',
-    xl: 'px-14 py-6 text-xl h-[80px]', // Input bilan bir xil balandlik!
+    xl: 'px-14 py-6 text-xl h-[80px]', 
   };
 
   const baseStyles = `

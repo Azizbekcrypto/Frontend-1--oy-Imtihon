@@ -13,12 +13,9 @@ export const FooterTop = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Overlay (agar kerak bo'lsa) */}
       <div className="absolute inset-0 bg-[#68caf1]/10"></div>
 
-      {/* Content */}
       <div className="relative h-full flex items-center justify-between px-16 max-w-[1300px] mx-auto">
-        {/* Chap tomon - Matn */}
         <div className="max-w-[450px]">
           <h2
             className="text-white text-5xl md:text-6xl font-extrabold leading-tight"
@@ -28,9 +25,7 @@ export const FooterTop = () => {
           </h2>
         </div>
 
-        {/* O'ng tomon - Form */}
         <div className="flex items-center gap-3">
-          {/* Input */}
           <input
             type="email"
             placeholder="Your Email Address"
@@ -51,7 +46,6 @@ export const FooterTop = () => {
             style={{ fontFamily: 'var(--second-family)' }}
           />
 
-          {/* Subscribe Button */}
           <BoottomFull size="xl" variant="primary">
             Subscribe
           </BoottomFull>

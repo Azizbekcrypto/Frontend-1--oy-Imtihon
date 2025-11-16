@@ -13,7 +13,7 @@ export const TeamExperts = [
     role: 'Farmer',
     img: Bacardo,
     socials: {
-      facebook: { Facebook }, // Linklarni joylashtiring
+      facebook: { Facebook }, 
       instagram: { Insta },
       twitter: { Twitter },
     },
@@ -24,7 +24,7 @@ export const TeamExperts = [
     role: 'Designer',
     img: Loreno,
     socials: {
-      facebook: { Facebook }, // Linklarni joylashtiring
+      facebook: { Facebook },
       instagram: { Insta },
       twitter: { Twitter },
     },
@@ -35,7 +35,7 @@ export const TeamExperts = [
     role: 'Farmer',
     img: Pelore,
     socials: {
-      facebook: { Facebook }, // Linklarni joylashtiring
+      facebook: { Facebook }, 
       instagram: { Insta },
       twitter: { Twitter },
     },

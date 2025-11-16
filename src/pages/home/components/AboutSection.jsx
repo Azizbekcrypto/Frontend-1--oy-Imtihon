@@ -39,7 +39,6 @@ export const AboutSection = () => {
             </p>
 
             <div className="space-y-4 mt-8">
-              {/* Feature 1 */}
               <div className="flex items-start gap-4 p-6 border-2 border-[#8BC34A] border-dashed rounded-lg bg-white">
                 <img
                   src={LeafIcon}
@@ -57,7 +56,6 @@ export const AboutSection = () => {
                 </div>
               </div>
 
-              {/* Feature 2 */}
               <div className="flex items-start gap-4 p-4">
                 <img
                   src={QualityIcon}
@@ -74,7 +72,6 @@ export const AboutSection = () => {
                   </p>
                 </div>
               </div>
-              {/* Explore More tugmasi */}
               <div className="mt-10">
                 <Button
                   text="Shop Now"

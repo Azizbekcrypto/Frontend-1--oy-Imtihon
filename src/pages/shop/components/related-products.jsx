@@ -10,14 +10,12 @@ export const RelatedProducts = ({ products }) => {
           key={item.id}
           className="group relative bg-[#F9F8F8] rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 block"
         >
-          {/* Sale Badge */}
           {item.tag && (
             <span className="absolute top-4 left-4 bg-[#274C5B] text-white px-3 py-1 rounded-lg text-xs font-bold z-10">
               {item.tag}
             </span>
           )}
           
-          {/* Product Image */}
           <div className="h-[200px] flex items-center justify-center mb-4 overflow-hidden rounded-xl">
             <img
               src={item.img}
@@ -26,12 +24,10 @@ export const RelatedProducts = ({ products }) => {
             />
           </div>
           
-          {/* Product Title */}
           <h3 className="text-center text-[#274C5B] font-semibold text-lg mb-2 group-hover:text-[#7EB693] transition">
             {item.title}
           </h3>
           
-          {/* Price Section */}
           <div className="flex items-center justify-center gap-3">
             <span className="line-through text-gray-400 text-sm">
               ${item.oldPrice}

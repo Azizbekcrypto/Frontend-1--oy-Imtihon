@@ -7,12 +7,9 @@ export const HomeOurProducts = () => {
   const limitedProducts = ProductShop.slice(0, 8);
 
   return (
-    // ASOSIY O'ZGARTIRISH: bg-[#274c5b] ni bg-white ga o'zgartirdik
     <section className="w-full bg-white py-20">
       <div className="max-w-[1300px] mx-auto px-6">
-        {/* Sarlavhalar */}
         <div className="text-center mb-12">
-          {/* Categories - Yellowtail */}
           <p
             className="text-[#7eb693] text-3xl md:text-4xl mb-2"
             style={{ fontFamily: 'var(--third-family)' }}
@@ -20,9 +17,7 @@ export const HomeOurProducts = () => {
             Categories
           </p>
 
-          {/* Our Products - Roboto Bold */}
           <h2
-            // O'ZGARTIRISH: text-white ni text-[#274c5b] ga o'zgartirdik
             className="text-[#274c5b] text-4xl md:text-5xl font-bold"
             style={{ fontFamily: 'var(--font-family)' }}
           >
@@ -30,7 +25,6 @@ export const HomeOurProducts = () => {
           </h2>
         </div>
 
-        {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {limitedProducts.map((item) => (
             <ShopProductCard
@@ -45,7 +39,6 @@ export const HomeOurProducts = () => {
           ))}
         </div>
 
-        {/* Load More Button */}
         <div className="mt-16 flex justify-center">
           <Button
             text="Load More"
