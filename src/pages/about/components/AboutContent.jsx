@@ -47,6 +47,7 @@ export const AboutContent = () => {
             >
               We do Creative Things for Success
             </h2>
+            
 
             {/* Birinchi paragraf */}
             <p
