@@ -29,7 +29,7 @@ export const ProductShop = [
   {
     id: 2,
     img: shop2,
-    title: 'Calabrese Broccoli',
+    title: 'Fresh Banana Fruites',
     tag: 'Fresh',
     oldPrice: 20,
     newPrice: 14,
@@ -38,7 +38,7 @@ export const ProductShop = [
   {
     id: 3,
     img: shop3,
-    title: 'Calabrese Broccoli',
+    title: 'White Nuts',
     tag: 'Millets',
     oldPrice: 20,
     newPrice: 15,
@@ -47,7 +47,7 @@ export const ProductShop = [
   {
     id: 4,
     img: shop4,
-    title: 'Calabrese Broccoli',
+    title: 'Vegan Red Tomato',
     tag: 'Vegetable',
     oldPrice: 20,
     newPrice: 17,
@@ -56,7 +56,7 @@ export const ProductShop = [
   {
     id: 5,
     img: shop5,
-    title: 'Calabrese Broccoli',
+    title: 'Mung Bean',
     tag: 'Health',
     oldPrice: 20,
     newPrice: 11,
@@ -65,7 +65,7 @@ export const ProductShop = [
   {
     id: 6,
     img: shop6,
-    title: 'Calabrese Broccoli',
+    title: 'Brown Hazelnut',
     tag: 'Nuts',
     oldPrice: 20,
     newPrice: 12,
@@ -73,7 +73,7 @@ export const ProductShop = [
   {
     id: 7,
     img: shop7,
-    title: 'Calabrese Broccoli',
+    title: 'Eggs',
     tag: 'Fresh',
     oldPrice: 20,
     newPrice: 17,
@@ -81,7 +81,7 @@ export const ProductShop = [
   {
     id: 8,
     img: shop8,
-    title: 'Calabrese Broccoli',
+    title: 'Zelco Suji Elaichi Rusk',
     tag: 'Fresh',
     oldPrice: 20,
     newPrice: 15,
@@ -89,7 +89,7 @@ export const ProductShop = [
   {
     id: 9,
     img: shop9,
-    title: 'Calabrese Broccoli',
+    title: 'Mung Bean',
     tag: 'Health',
     oldPrice: 20,
     newPrice: 11,
@@ -97,7 +97,7 @@ export const ProductShop = [
   {
     id: 10,
     img: shop10,
-    title: 'Calabrese Broccoli',
+    title: 'White Hazelnut',
     tag: 'Nuts',
     oldPrice: 20,
     newPrice: 12,
@@ -105,7 +105,7 @@ export const ProductShop = [
   {
     id: 11,
     img: shop11,
-    title: 'Calabrese Broccoli',
+    title: 'Fresh Corn',
     tag: 'Fresh',
     oldPrice: 20,
     newPrice: 15,
@@ -113,7 +113,7 @@ export const ProductShop = [
   {
     id: 12,
     img: shop12,
-    title: 'Calabrese Broccoli',
+    title: 'Organic Almonds',
     tag: 'Fresh',
     oldPrice: 20,
     newPrice: 17,

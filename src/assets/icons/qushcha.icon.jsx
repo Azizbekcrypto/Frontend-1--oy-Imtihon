@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const QushchaIcon = () => {
+export const Twitter = () => {
   return (
     <div>
       <svg

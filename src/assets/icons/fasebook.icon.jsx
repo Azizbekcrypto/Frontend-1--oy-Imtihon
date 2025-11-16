@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const FacebookIcon = () => {
+export const Facebook = () => {
   return (
     <div>
       <svg

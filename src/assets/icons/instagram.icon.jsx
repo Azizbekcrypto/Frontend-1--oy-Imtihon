@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const InstagramIcon = () => {
+export const Insta = () => {
   return (
     <div>
       <svg

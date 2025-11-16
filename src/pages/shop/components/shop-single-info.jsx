@@ -1,86 +1,105 @@
 import React from 'react';
-// Agar sizda maxsus ikonka kutubxonasi bo'lmasa, oddiy yulduzchadan foydalanamiz
+
 const StarRating = ({ rating }) => {
   const stars = [];
   for (let i = 0; i < 5; i++) {
     stars.push(
-      <span
-        key={i}
-        className={i < rating ? 'text-[#FFC700]' : 'text-gray-300'} // To'q sariq yulduzchalar uchun rang
-      >
+      <span key={i} className={i < rating ? 'text-[#FFC700]' : 'text-gray-300'}>
         ★
       </span>,
     );
   }
-  return <div className="flex gap-1">{stars}</div>;
+  return <div className="flex gap-1 text-2xl">{stars}</div>;
 };
 
-// =========================================================================
-
 export const ShopSingleInfo = ({ product }) => {
-  // Miqdor (Quantity) holatini boshqarish
   const [quantity, setQuantity] = React.useState(1);
 
   const handleQuantityChange = (event) => {
-    // Faqat musbat butun sonlarni qabul qilish
     const value = Math.max(1, parseInt(event.target.value) || 1);
     setQuantity(value);
   };
 
+  const increaseQuantity = () => setQuantity((prev) => prev + 1);
+  const decreaseQuantity = () => setQuantity((prev) => Math.max(1, prev - 1));
+
   return (
-    <div className="flex-1 p-8 rounded-3xl bg-white">
-      {/* Mahsulot Nomini */}
-      <h1 className="text-4xl font-extrabold text-[var(--primary-dark, #274C5B)] font-['Inter']">
+    <div className="flex-1 rounded-3xl bg-[#F9F8F8] p-10">
+      {/* Product Title */}
+      <h1 className="text-4xl font-extrabold text-[#274C5B] font-['Roboto'] mb-3">
         {product.title}
       </h1>
 
-      {/* Reyting */}
-      <div className="mt-2">
+      {/* Rating */}
+      <div className="mb-4">
         <StarRating rating={product.rating || 5} />
       </div>
 
-      {/* Narx */}
-      <div className="flex gap-4 mt-3 items-center">
+      {/* Price */}
+      <div className="flex gap-4 items-center mb-6">
         <span className="line-through text-gray-400 text-xl font-semibold">
           ${product.oldPrice}
         </span>
-        <span className="text-[var(--primary-dark, #274C5B)] text-4xl font-bold font-['Roboto']">
+        <span className="text-[#274C5B] text-5xl font-bold font-['Roboto']">
           ${product.newPrice}
         </span>
       </div>
 
-      {/* Tavsif */}
-      <p className="mt-6 text-[var(--dark-gray, #525c60)] leading-7 max-w-[550px] font-['Open Sans']">
+      {/* Description */}
+      <p className="text-gray-600 leading-7 font-['Open_Sans'] text-base mb-8">
         Simply dummy text of the printing and typesetting industry. Lorem had
         ceased to been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley.
       </p>
 
-      {/* Savatga Qo'shish Bo'limi */}
-      <div className="mt-8 flex items-center gap-4">
-        <label
-          htmlFor="quantity"
-          className="text-xl font-semibold text-[var(--primary-dark, #274C5B)] hidden"
-        >
-          Quantity:
-        </label>
+      {/* Quantity and Add to Cart */}
+      <div className="flex items-center gap-4 mb-6">
+        <div className="flex items-center gap-2">
+          <label className="text-lg font-bold text-[#274C5B]">Quantity:</label>
 
-        {/* Miqdor Kiritish Maydoni */}
-        <div className="relative">
-          <input
-            id="quantity"
-            type="number"
-            min="1"
-            value={quantity}
-            onChange={handleQuantityChange}
-            className="w-24 h-16 text-center border-2 border-[var(--primary-dark, #274C5B)] rounded-xl text-xl font-bold text-[var(--primary-dark, #274C5B)] focus:outline-none focus:border-[var(--primary-green, #7eb693)] transition p-2"
-          />
+          {/* Quantity Control */}
+          <div className="flex items-center border-2 border-[#274C5B] rounded-xl overflow-hidden">
+            <button
+              onClick={decreaseQuantity}
+              className="px-4 py-3 bg-white hover:bg-gray-100 text-[#274C5B] font-bold text-xl transition"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              min="1"
+              value={quantity}
+              onChange={handleQuantityChange}
+              className="w-16 text-center py-3 text-xl font-bold text-[#274C5B] bg-white focus:outline-none"
+            />
+            <button
+              onClick={increaseQuantity}
+              className="px-4 py-3 bg-white hover:bg-gray-100 text-[#274C5B] font-bold text-xl transition"
+            >
+              +
+            </button>
+          </div>
         </div>
 
-        {/* Add to Cart Tugmachasi */}
-        <button className="h-16 flex items-center bg-[var(--primary-dark, #274C5B)] hover:bg-[var(--primary-green, #7eb693)] transition text-white text-xl font-bold py-3 px-10 rounded-xl">
+        {/* Add to Cart Button */}
+        <button className="flex-1 h-[60px] bg-[#274C5B] hover:bg-[#7EB693] transition text-white text-xl font-bold rounded-xl">
           Add To Cart
         </button>
+      </div>
+
+      {/* Divider */}
+      <div className="border-t border-gray-300 my-6"></div>
+
+      {/* Additional Info */}
+      <div className="space-y-3 text-base">
+        <p className="text-gray-600">
+          <span className="font-semibold text-[#274C5B]">Category:</span>{' '}
+          Vegetables
+        </p>
+        <p className="text-gray-600">
+          <span className="font-semibold text-[#274C5B]">Tags:</span>{' '}
+          Vegetables, Healthy, Chinese, Cabbage, Green Cabbage
+        </p>
       </div>
     </div>
   );

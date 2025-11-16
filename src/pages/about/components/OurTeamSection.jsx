@@ -10,9 +10,12 @@ export const OurTeamSection = () => {
         
         {/* Sarlavha Bloki */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="font-serif italic text-[#7EB693] text-xl mb-2">
+        <h3
+            className="text-[#7eb693] text-3xl md:text-4xl mb-3"
+            style={{ fontFamily: 'var(--third-family)' }}
+          >
             Team
-          </p>
+          </h3>
           <h2 className="text-5xl font-extrabold text-[#274C5B] mb-6">
             Our Organic Experts
           </h2>

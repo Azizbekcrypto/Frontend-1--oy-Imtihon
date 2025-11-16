@@ -7,6 +7,7 @@ import { HomeTestimonials } from './components/HomeTestimonials';
 import { HomeOfferProducts } from './components/HomeOfferProducts';
 import { HomeAboutUs } from './components/HomeAboutUs';
 import { HomeCategories } from './components/HomeCategories';
+import { HomeNews } from './components/HomeNews';
 
 
 export const Home = () => {
@@ -20,6 +21,7 @@ export const Home = () => {
       <HomeOfferProducts />
       <HomeAboutUs />
       <HomeCategories />
+      <HomeNews/>
     </div>  
   );
 }

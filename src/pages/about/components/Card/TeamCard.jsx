@@ -1,9 +1,8 @@
 // src/components/team-card/TeamCard.jsx
 import React from 'react';
-// Iconlarni o'zingizning to'g'ri yo'llaridan import qiling
-import { FacebookIcon } from '../../../../assets/icons/fasebook.icon'; // Agar nomi 'Fasebook' bo'lsa
-import { InstagramIcon } from '../../../../assets/icons/instagram.icon';
-import { QushchaIcon } from '../../../../assets/icons/qushcha.icon'; 
+import { Facebook } from '../../../../assets/icons/fasebook.icon'; // Agar nomi 'Fasebook' bo'lsa
+import { Insta } from '../../../../assets/icons/instagram.icon';
+import { Twitter } from '../../../../assets/icons/qushcha.icon'; 
 
 export const TeamCard = ({ expert }) => {
   return (
@@ -31,13 +30,13 @@ export const TeamCard = ({ expert }) => {
         <div className="flex justify-center space-x-3">
           
           <a href={expert.socials.facebook} target="_blank" rel="noopener noreferrer" className="p-1 hover:opacity-75 transition-opacity duration-200">
-            <FacebookIcon />
+            <Facebook />
           </a>
           <a href={expert.socials.instagram} target="_blank" rel="noopener noreferrer" className="p-1 hover:opacity-75 transition-opacity duration-200">
-            <InstagramIcon />
+            <Insta />
           </a>
           <a href={expert.socials.twitter} target="_blank" rel="noopener noreferrer" className="p-1 hover:opacity-75 transition-opacity duration-200">
-            <QushchaIcon />
+            <Twitter />
           </a>
 
         </div>
